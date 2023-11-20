@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainbox">
+        <div><input type="text"  id="screen" readonly> </div>
+        <div id="button">
+            <div id="clear" onclick="deleteLastElement()">D</div>
+            <div id="emty"onclick="screen.value= ''">C</div>
+            <div id="percent"onclick="screen.value+= 0">%</div>
+            <div id="divi"onclick="screen.value+= '/'">/</div>
+            <div id="sev"onclick="screen.value+= 7">7</div>
+            <div id="eig"onclick="screen.value+= 8">8</div>
+            <div id="nine"onclick="screen.value+= 9">9</div>
+            <div id="multi"onclick="screen.value+= '*'">*</div>
+            <div id="four"onclick="screen.value+= 4">4</div>
+            <div id="five"onclick="screen.value+= 5">5</div>
+            <div id="six"onclick="screen.value+= 6">6</div>
+            <div id="sub"onclick="screen.value+= '-'">-</div>
+            <div id="one"onclick="screen.value+= 1">1</div>
+            <div id="two"onclick="screen.value+= 2">2</div>
+            <div id="three"onclick="screen.value+= 3">3</div>
+            <div id="add"onclick="screen.value+= '+'">+</div>
+            <div id="return"onclick="screen.value">R</div>
+            <div id="zero" onclick="screen.value+= 0">0</div>
+            <div id="point"onclick="screen.value+= '.'">.</div>
+            <div><input type="button"  id="equ" value="=" onclick="screen.value=eval(screen.value)"></div>
+       </div>
+    </div>
+    <script>
+        const screen = document.getElementById("screen");
+        const result =document.getElementById("equ");
+        let answer ="";
+        const addition = ()=>{
+        answer =  screen.value;
+        equ = answer;
+        // addition()
+        }
+        equ.addEventlistener("onclick", addinion())
+
+
+        
+    </script>
+</body>
+</html>
